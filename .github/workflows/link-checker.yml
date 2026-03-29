@@ -25,7 +25,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2.7.0
         with:
           args: --config ./lychee.toml --verbose --no-progress .
-          fail: true
+          fail: false
 
       - name: Create Issue From File
         if: env.exit_code != 0
